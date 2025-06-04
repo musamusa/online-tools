@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UUID v4 Generator - Online Tools</title>
+    <base href="/online-tools/">
+    <meta name="keywords" content="UUID, UUID v4, UUID generator, online, random UUID">
+    <meta name="author" content="emn178">
+    <meta name="copyright" content="emn178">
+    <meta name="description" content="This UUID v4 generator online tool helps you generate random UUIDs (Universally Unique Identifiers).">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UUID v4 Generator">
+    <meta property="og:url" content="https://emn178.github.io/online-tools/uuid/generate_uuid4/">
+    <meta property="og:site_name" content="Online Tools">
+    <meta property="og:description" content="This UUID v4 generator online tool helps you generate random UUIDs (Universally Unique Identifiers).">
+    <meta property="og:locale" content="en">
+    <meta property="og:image" content="https://emn178.github.io/online-tools/images/logo.svg">
+    <meta property="article:author" content="emn178">
+    <meta property="article:tag" content="UUID, UUID v4, UUID generator, online, random UUID">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:image" content="https://emn178.github.io/online-tools/images/logo.svg">
+    <link rel="canonical" href="https://emn178.github.io/online-tools/uuid/uuid4/">
+    <link rel="icon" href="images/logo.svg">
+    <script>
+        var delayScripts = [];
+        var waitLoadCount = 0;
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        if (location.hostname != 'localhost') {
+            gtag('js', new Date());
+            gtag('config', 'G-WT6N5R6W6Z');
+
+            (function () {
+                var gaUrl = 'https://www.googletagmanager.com/gtag/js?id=G-WT6N5R6W6Z';
+
+                function initGTMOnEvent(e) {
+                    document.removeEventListener(event.type, initGTMOnEvent);
+                    initGTM();
+                }
+
+                function initGTM() {
+                    if (window.gtmDidInit) {
+                        return;
+                    }
+                    window.gtmDidInit = true;
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = gaUrl;
+                    document.head.appendChild(script);
+                }
+
+                if (document.addEventListener) {
+                    document.addEventListener('DOMContentLoaded', function() {
+                        setTimeout(initGTM, 3500);
+                    });
+                    document.addEventListener('scroll', initGTMOnEvent);
+                    document.addEventListener('mousemove', initGTMOnEvent);
+                    document.addEventListener('touchstart', initGTMOnEvent);
+                } else {
+                    delayScripts.push({
+                        src: gaUrl
+                    });
+                }
+            })();
+        }
+
+        if (localStorage.getItem('DARK') === '1') {
+            document.documentElement.classList.add('dark-theme')
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css?v=27">
+</head>
+<body>
+<div id="app">
+    <div id="sidebar">
+        <div class="mask"></div>
+        <div class="container">
+            <header>
+                <a href="./"><img src="images/logo.svg" width="18" height="18" alt="Logo"><h2>Online Tools</h2></a>
+                <div class="toolbar">
+                    <button class="icon theme">
+                        <img class="light" src="images/light.svg" alt="Dark mode" title="Dark mode">
+                        <img class="dark" src="images/dark.svg" alt="Dark mode" title="Dark mode">
+                    </button>
+                </div>
+            </header>
+            <div class="section">
+                <h3>Hash</h3>
+                <details><summary>CRC</summary><nav><ol><li><a href="crc/">CRC</a></li></ol></nav></details>
+                <details><summary>MD</summary><nav><ol><li><a href="md2.html">MD2</a></li><li><a href="md2_file_hash.html">MD2 File</a></li><li><a href="md4.html">MD4</a></li><li><a href="md4_file_hash.html">MD4 File</a></li><li><a href="md5.html">MD5</a></li><li><a href="md5_checksum.html">MD5 File</a></li></ol></nav></details>
+                <details><summary>SHA1</summary><nav><ol><li><a href="sha1.html">SHA1</a></li><li><a href="sha1_checksum.html">SHA1 File</a></li></ol></nav></details>
+                <details><summary>SHA2</summary><nav><ol><li><a href="sha224.html">SHA224</a></li><li><a href="sha224_checksum.html">SHA224 File</a></li><li><a href="sha256.html">SHA256</a></li><li><a href="sha256_checksum.html">SHA256 File</a></li><li><a href="double_sha256.html">Double SHA256</a></li></ol></nav></details>
+            </div>
+            <div class="section">
+                <h3>Generators</h3>
+                <details class="active" open>
+                    <summary>UUID</summary>
+                    <nav>
+                        <ol>
+                            <li class="active"><a href="uuid/uuid4/">UUID v4</a></li>
+                        </ol>
+                    </nav>
+                </details>
+            </div>
+            <div class="section">
+                <h3>Others</h3>
+                <details>
+                    <summary>Others</summary>
+                    <nav>
+                        <ol>
+                            <li><a href="qr-code/generator/">QR Code Generator</a></li>
+                            <li><a href="syntax-highlight/">Syntax Highlight</a></li>
+                        </ol>
+                    </nav>
+                </details>
+            </div>
+            <div class="section">
+                <h3>Links</h3>
+                <nav class="links">
+                    <ol>
+                        <li><a href="https://github.com/emn178/online-tools/issues">Contact</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="top-nav">
+            <button id="sidebar-toggler" aria-controls="sidebar" aria-expanded="false" aria-label="Menu">
+                <img src="images/menu.svg" width="24" height="24" alt="Menu">
+            </button>
+        </div>
+        <header>
+            <h1>UUID v4 Generator</h1>
+            <p>This UUID v4 generator online tool helps you generate random UUIDs (Universally Unique Identifiers).</p>
+        </header>
+        <main>
+            <div class="layout">
+                <div class="layout-block">
+                    <div class="output">
+                        <div class="block block-fill">
+                            <div class="block-title">Generated UUID
+                                <div class="toolbar">
+                                    <button class="icon" data-toggle="copy" data-clipboard-target="#output" data-message="UUID copied">
+                                        <img src="images/copy.svg" alt="Copy" title="Copy"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <input type="text" class="container" id="output" readonly="readonly" placeholder="Click Generate to create UUID">
+                        </div>
+                    </div>
+                </div>
+                <div class="settings">
+                    <div class="block block-fill">
+                        <div class="block-title">Settings</div>
+                        <div class="container">
+                            <div class="setting">
+                                <a class="btn" id="generate">Generate UUID</a>
+                            </div>
+                            <div class="setting">
+                                <label class="switcher">
+                                    <input type="checkbox" value="1" id="uppercase">
+                                    <div class="toggle"></div>
+                                    <span>Uppercase</span>
+                                </label>
+                            </div>
+                            <div class="setting">
+                                <label class="switcher">
+                                    <input type="checkbox" value="1" id="no-dashes">
+                                    <div class="toggle"></div>
+                                    <span>Remove Dashes</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function generateUUID() {
+                    const uuid = ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+                      (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+                    );
+                    const uppercase = document.getElementById('uppercase').checked;
+                    const noDashes = document.getElementById('no-dashes').checked;
+                    let formattedUUID = uuid;
+
+                    if (uppercase) {
+                        formattedUUID = formattedUUID.toUpperCase();
+                    }
+                    if (noDashes) {
+                        formattedUUID = formattedUUID.replace(/-/g, '');
+                    }
+
+                    document.getElementById('output').value = formattedUUID;
+                }
+
+                document.getElementById('generate').addEventListener('click', generateUUID);
+                document.getElementById('uppercase').addEventListener('change', generateUUID);
+                document.getElementById('no-dashes').addEventListener('change', generateUUID);
+
+                // Generate UUID on page load
+                generateUUID();
+            </script>
+            <script>
+                delayScripts.push({
+                    src: 'js/clipboard.min.js',
+                    onload: function () {
+                        new ClipboardJS('[data-toggle="copy"]').on('success', function (e) {
+                            showMessage(e.trigger.getAttribute('data-message'));
+                            gtag('event', 'copy');
+                        });
+                    },
+                    delay: 100
+                });
+            </script>
+        </main>
+    </div>
+    <div id="message"></div>
+</div>
+<script src="https://code.jquery.com/jquery-1.10.1.min.js" defer></script>
+<script src="js/main.js?v=41" defer></script>
+</body>
+</html>
